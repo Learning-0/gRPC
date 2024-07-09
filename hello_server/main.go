@@ -19,7 +19,7 @@ func (s *server) SayHello(ctx context.Context, req *pb.HelloRequest) (*pb.HelloR
 	return &pb.HelloResponse{ResponseMsg: "hello " + req.RequestName}, nil
 }
 
-//这是一段注释
+// 这是一段注释
 func main() {
 	//开启端口
 	listen, _ := net.Listen("tcp", "127.0.0.1:9090")
